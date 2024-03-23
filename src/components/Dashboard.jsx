@@ -5,21 +5,23 @@ import Typography from '@mui/material/Typography';
 import './dasbadmin.css';
 
 
+
+
 const images = [
   
-  {
-    
-    url: '/static/images/buttons/breakfast.jpg',
-    title: 'ORDER',
+  { 
+    url: 'assets/order.png',
+    title: 'ORDER' ,
     width: '40%',
-  },
+    
+  }, 
   {
-    url: '/static/images/buttons/burgers.jpg',
+    url: 'assets/menu.png',
     title: 'MENU',
     width: '30%',
   },
   {
-    url: '/static/images/buttons/camera.jpg',
+    url: '/assets/feedback.jpg',
     title: 'FEEDBACK',
     width: '30%',
   },

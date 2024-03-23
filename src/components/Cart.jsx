@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { useEffect } from 'react';
-import "../styles/cart.css";
+import "../styles/Cart.css";
 
 const Cart = ({cart, setCart, handleChange}) => {
     const [price, setPrice] = useState(0);

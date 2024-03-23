@@ -52,7 +52,7 @@ function Feedback () {
     
       
       <br /><br /><br /><br />   
-      <h1 style={{marginTop:'-184px', color:'white'}}> Give us your Feedback! </h1>
+      <h1 style={{marginTop:'-462px', color:'white'}}> Give us your Feedback! </h1>
      
       <div style={styles.stars}>
         {stars.map((_, index) => {
@@ -73,7 +73,7 @@ function Feedback () {
         })}
       </div>
       
-      <br />
+      {/* <br /> */}
       <textarea   
         border='50px'
         placeholder="What's your experience?"
@@ -89,7 +89,7 @@ function Feedback () {
       >
         Submit
       </button> */}
-       <Button variant='outlined' color='inherit' style={{color:'blue'}} >Submit</Button>
+       <Button variant='outlined' color='inherit' style={{color:'white' ,fontFamily:'math',width:'150px' , fontSize:'20px'}} >Submit</Button>
       
     </div>
     </section>

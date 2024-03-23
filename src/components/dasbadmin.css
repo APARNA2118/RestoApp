@@ -3,5 +3,10 @@ span.MuiImageBackdrop-root.css-1p4evgx {
 }
 
 .MuiBox-root.css-13t4l7t {
-    margin-top: 117px;
+    margin-top: 160px;
+}
+
+span.MuiTypography-root.MuiTypography-subtitle1.css-97e7ai-MuiTypography-root {
+    font-size: 31px;
+    font-family: fangsong;
 }

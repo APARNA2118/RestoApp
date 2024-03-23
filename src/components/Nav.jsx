@@ -7,28 +7,35 @@ const Nav = () => {
     <div>
         <AppBar> 
         <Toolbar>
-            <Typography sx={{flexGrow:1}} align='left' variant='h5' style={{ color: 'white', fontSize: '24px', fontFamily: 'monospace' }} >
-               Restaurant
-              
+            <Typography sx={{flexGrow:1}} align='left' variant='h5' style={{ color: '#01244a', fontSize: '24px', fontFamily: 'monospace' }} >
+               TEA TALKS
+               <img style={{width:100}}
+                  src="assets/Tt.png"
+                  alt=""
+                  title=""
+                />
             </Typography> 
            
-                  <Button style={{color:'white'}}>
-                     <Link to='/' style={{color:"white" , fontFamily: 'monospace'}}>Home</Link>
+                  <Button style={{color:'white' }}>
+                     <Link to='/' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>Home</Link>
                   </Button>
                   <Button style={{color:'white'}}>
-                     <Link to='/l' style={{color:"white" , fontFamily: 'monospace'}}>Login</Link>
+                     <Link to='/l' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>Login</Link>
                   </Button>
                   <Button style={{color:'white'}}>
-                     <Link to='/s' style={{color:"white" , fontFamily: 'monospace'}}>Signup</Link>
+                     <Link to='/s' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>Signup</Link>
                   </Button>
                   <Button style={{color:'white'}}>
-                     <Link to='/d' style={{color:"white" , fontFamily: 'monospace'}}>Dashboard</Link>
+                     <Link to='/d' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>Dashboard</Link>
                   </Button>
                   <Button style={{color:'white'}}>
-                     <Link to='/f' style={{color:"white" , fontFamily: 'monospace'}}>Feedback</Link>
+                     <Link to='/f' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>Feedback</Link>
                   </Button>
                   <Button style={{color:'white'}}>
-                     <Link to='/c' style={{color:"white" , fontFamily: 'monospace'}}>Checkout</Link>
+                     <Link to='/c' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>Checkout</Link>
+                  </Button>
+                  <Button style={{color:'white'}}>
+                     <Link to='/cart' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>Cart</Link>
                   </Button>
         </Toolbar>
      </AppBar>

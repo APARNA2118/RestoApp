@@ -5,8 +5,8 @@ const Login = () => {
   return (
     <div>
 
-        <br /><br /><br /><br />
-        <Typography variant='h3'>Login to your Account</Typography>
+        <br /><br /><br /><br /> <br /><br /><br />
+        <Typography variant='h3' style={{fontFamily:'Sans-serif',fontSize:'40px',fontWeight:'bold'}}>Login to your Account</Typography>
         <br /><br /><br />
         <TextField variant='standard' label='Username'></TextField>
         <br /><br />

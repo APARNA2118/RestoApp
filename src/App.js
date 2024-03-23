@@ -9,6 +9,7 @@ import Dashboard from './components/Dashboard';
 import Feedback from './components/Feedback';
 import HomeCarousel from './components/HomeCarousel';
 import Checkout from './components/Checkout';
+import AppCart from './AppCart';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
        <Route path='/d' element={<Dashboard/>}/>
        <Route path='/f' element={<Feedback/>}/>
        <Route path= '/c' element={<Checkout/>}/>
+       <Route path= '/cart' element={<AppCart/>}/>
     </Routes>
     </div>
   );
