@@ -1,55 +1,25 @@
-//import { Carousel } from 'bootstrap'
-import Carousel from 'react-bootstrap/Carousel'
-import React from 'react'
-import HomeCarousel from './HomeCarousel';
 
-function Home() {
+import React from "react";
+import Layout from "./../components/Layout/Layout";
+import { Link } from "react-router-dom";
+import Banner from "../images/banner.jpeg";
+import "../style/HomeStyles.css";
 
+const Home = () => {
   return (
-    <div>
-      <HomeCarousel />
-      {/* <div className="Home">
-      {carousel.render()}
-    </div> */}
-    {/* <Carousel>
-      {/* <Carousel.Item interval={1000}>
-        <img
-          className="d-block w-100"
-          src="https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1710892800&semt=sph"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item> */}
-      {/* <Carousel.Item interval={500}>
-        <img
-          className="d-block w-100"
-          src="https://t4.ftcdn.net/jpg/02/84/46/89/360_F_284468940_1bg6BwgOfjCnE3W0wkMVMVqddJgtMynE.jpg"
-          alt="Second slide"
-        />
-        <Carousel.Caption>
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://png.pngtree.com/background/20230512/original/pngtree-japanese-food-in-a-table-with-other-dinner-items-on-it-picture-image_2503404.jpg"
-          alt="Third slide"
-        />
-        <Carousel.Caption>
-          <h5>Third slide label</h5>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item> */}
-    {/* </Carousel> */}
-    </div>
-  )
-}
+    <Layout>
+      <br /><br /><br /><br />
+      <div className="home" style={{ backgroundImage: `url(${Banner})` }}>
+        <div className="headerContainer">
+          <h1>TEA TALKS</h1>
+          <p>Best Food In India</p>
+          <Link to="/menu">
+            <button>ORDER NOW</button>
+          </Link>
+        </div>
+      </div>
+    </Layout>
+  );
+};
 
-export default Home
+export default Home;

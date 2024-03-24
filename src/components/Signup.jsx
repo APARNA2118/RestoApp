@@ -11,7 +11,7 @@ const Signup = () => {
   
 return (
   <div>
-    <br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br />
       <Typography variant='h4' style={{color: 'orange',fontFamily: 'serif',fontSize: '48px',fontWeight: 'bold',}} >Sign Up Here</Typography>
       <br /><br />
       <Box
@@ -35,6 +35,7 @@ return (
 
      
       </Box>
+      <br /><br />
       <Button variant='outlined' color='inherit' style={{color:'blue'}} >SignUp</Button>
   </div>
 )

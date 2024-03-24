@@ -8,9 +8,9 @@ const Login = () => {
         <br /><br /><br /><br /> <br /><br /><br />
         <Typography variant='h3' style={{fontFamily:'Sans-serif',fontSize:'40px',fontWeight:'bold'}}>Login to your Account</Typography>
         <br /><br /><br />
-        <TextField variant='standard' label='Username'></TextField>
+        <TextField variant= "outlined" label='Username'></TextField>
         <br /><br />
-        <TextField variant='standard' label='Password'></TextField>
+        <TextField variant='outlined' label='Password'></TextField>
         <br /><br /><br />
         
         <Button variant='outlined'>LOG IN</Button>
