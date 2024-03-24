@@ -52,6 +52,10 @@ function Feedback () {
     
       
       <br /><br /><br /><br />   
+<<<<<<< HEAD
+=======
+      <br /><br /><br /><br />
+>>>>>>> 4b7c3c9 (new changes)
       <h1 style={{marginTop:'-462px', color:'white'}}> Give us your Feedback! </h1>
      
       <div style={styles.stars}>
