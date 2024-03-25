@@ -12,7 +12,7 @@ const Signup = () => {
 return (
   <div>
     <br /><br /><br /><br /><br /><br /><br />
-      <Typography variant='h4' style={{color: 'orange',fontFamily: 'serif',fontSize: '48px',fontWeight: 'bold',}} >Sign Up Here</Typography>
+      <Typography variant='h4' style={{color: 'orange',fontFamily: 'serif',fontSize: '50px',fontWeight: 'bold',}} >Sign Up Here</Typography>
       <br /><br />
       <Box
       component="form"

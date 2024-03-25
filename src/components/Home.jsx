@@ -2,13 +2,13 @@
 import React from "react";
 import Layout from "./../components/Layout/Layout";
 import { Link } from "react-router-dom";
-import Banner from "../images/banner.jpeg";
+import Banner from "../images/banner.jpg";
 import "../style/HomeStyles.css";
 
 const Home = () => {
   return (
     <Layout>
-      <br /><br /><br /><br />
+      <br /><br /><br />
       <div className="home" style={{ backgroundImage: `url(${Banner})` }}>
         <div className="headerContainer">
           <h1>TEA TALKS</h1>

@@ -4,7 +4,6 @@ import './../App.css';
 import { FaStar } from "react-icons/fa";
 import { Button } from "@mui/material";
 //import classNames from 'classnames';
-//import image from '../restaurant/src/assets/food-feedback.jpg';
 
 const colors = {
     orange: "#FFBA5A",
@@ -12,21 +11,11 @@ const colors = {
     
 };
 
-
-
 function Feedback () {
     
   const [currentValue, setCurrentValue] = useState(0);
   const [hoverValue, setHoverValue] = useState(undefined);
   const stars = Array(5).fill(0)
-
-  // const myStyle={
-    //     backgroundImage:`url(${image})`,
-    //     backgroundSize:'cover',
-    //     backgroundRepeat:'no-repeat',
-    //     height:"100vh",
-    //     fontSize:'50px',
-    // };
 
   const handleClick = value => {
     setCurrentValue(value)
@@ -47,15 +36,12 @@ function Feedback () {
     
     style={{
         ...styles.container,
-        //...myStyle,
         }}>
     
       
       <br /><br /><br /><br />   
-<<<<<<< HEAD
-=======
       <br /><br /><br /><br />
->>>>>>> 4b7c3c9 (new changes)
+
       <h1 style={{marginTop:'-462px', color:'white'}}> Give us your Feedback! </h1>
      
       <div style={styles.stars}>
@@ -82,17 +68,7 @@ function Feedback () {
         border='50px'
         placeholder="What's your experience?"
         style={styles.textarea}/>
-         
-
-      {/* <textarea className={classNames(styles.Feedback, { border: '50px' })} placeholder="What's your experience?" style={styles.textarea} /> */}
-
-      {/* <button
-        variant='outlined'
-        //style={styles.button}
-        style={{color:'blue'}}
-      >
-        Submit
-      </button> */}
+     
        <Button variant='outlined' color='inherit' style={{color:'white' ,fontFamily:'math',width:'150px' , fontSize:'20px'}} >Submit</Button>
       
     </div>
@@ -102,11 +78,11 @@ function Feedback () {
 
 
 const styles = {
-  // container: {
-  //   display: "flex",
-  //   flexDirection: "column",
-  //   alignItems: "center"
-  // },
+  container: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center"
+  },
   stars: {
     display: "flex",
     flexDirection: "row",
@@ -129,8 +105,5 @@ const styles = {
   }
 
 };
-
-
-
 
 export default Feedback;

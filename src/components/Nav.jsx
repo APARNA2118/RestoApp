@@ -1,10 +1,10 @@
 import { AppBar, Button, Toolbar, Typography } from '@mui/material'
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
-    <div>
+    <div className='navbar'>
         <AppBar> 
         <Toolbar>
             <Typography sx={{flexGrow:1}} align='left' variant='h5' style={{ color: '#01244a', fontSize: '24px', fontFamily: 'monospace' }} >
@@ -35,11 +35,7 @@ const Nav = () => {
                      <Link to='/c' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>Checkout</Link>
                   </Button> */}
                   <Button style={{color:'white'}}>
-<<<<<<< HEAD
-                     <Link to='/cart' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>Cart</Link>
-=======
                      <Link to='/cart' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>Menu</Link>
->>>>>>> 4b7c3c9 (new changes)
                   </Button>
         </Toolbar>
      </AppBar>

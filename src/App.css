@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align:center; */
 }
 
 .App-logo {
@@ -25,8 +25,13 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #0d3039;
 }
+
+.navbar {
+  color: rgb(107, 23, 23);
+}
+
 
 .Food-bg {
   background-image: url(../restaurant/src/assets/food-feedback.jpg);
@@ -41,7 +46,7 @@
 .contents {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  max-width: 1450px;
   width: 100%;
   justify-content: center;
   align-items: center
