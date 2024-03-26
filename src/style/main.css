@@ -157,3 +157,14 @@ main {
 	background-color: var(--main-color);
 	color: #fff;
 }
+
+
+/* dashboard */
+.App {
+    margin-top: 108px;
+    
+}
+
+header.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation4.MuiAppBar-root.MuiAppBar-colorPrimary.MuiAppBar-positionAbsolute.css-n7rtur-MuiPaper-root-MuiAppBar-root {
+    margin-top: 139px;
+}

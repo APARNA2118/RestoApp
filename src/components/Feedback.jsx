@@ -39,7 +39,7 @@ function Feedback () {
         }}>
     
       
-      <br /><br /><br /><br />   
+      <br /><br /><br /><br />
       <br /><br /><br /><br />
 
       <h1 style={{marginTop:'-462px', color:'white'}}> Give us your Feedback! </h1>

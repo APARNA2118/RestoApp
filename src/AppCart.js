@@ -124,7 +124,7 @@ function AppCart() {
 
 	return (
 		<div className="App">
-			<br /><br /><br /><br />
+			<br /><br /><br />
 			<ShoppingCart
 				visibilty={cartsVisibilty}
 				products={productsInCart}

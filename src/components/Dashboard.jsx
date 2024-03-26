@@ -13,6 +13,8 @@ const images = [
     url: 'assets/order.png',
     title: 'ORDER' ,
     width: '40%',
+
+    
     
   }, 
   {
@@ -26,6 +28,7 @@ const images = [
     width: '30%',
   },
 ];
+const order=require('../components/Feedback');
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
