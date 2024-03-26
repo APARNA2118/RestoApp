@@ -7,7 +7,7 @@ const Nav = () => {
     <div className='navbar'>
         <AppBar> 
         <Toolbar>
-            <Typography sx={{flexGrow:1}} align='left' variant='h5' style={{ color: '#01244a', fontSize: '24px', fontFamily: 'monospace' }} >
+            <Typography sx={{flexGrow:1}} align='left' variant='h5' style={{ color: '#fff', fontSize: '24px', fontFamily: 'monospace' }} >
                TEA TALKS
                <img style={{width:100}}
                   src="assets/Tt.png"

@@ -66,3 +66,7 @@ article{
     color: green;
     font-weight: bold;
 }
+
+.navbar {
+    margin-top: -1px;
+}

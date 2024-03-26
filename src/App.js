@@ -11,6 +11,7 @@ import HomeCarousel from './components/HomeCarousel';
 import Checkout from './components/Checkout';
 import AppCart from './AppCart';
 import Order from './components/Order';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
        <Route path= '/cart' element={<AppCart/>}/>
        <Route path="/o" element={<Order/>}/>
     </Routes>
+    <Footer/>
     </div>
   );
 }
