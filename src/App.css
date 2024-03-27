@@ -34,7 +34,7 @@
 
 
 .Food-bg {
-  background-image: url(../restaurant/src/assets/food-feedback.jpg);
+  background-image: url(../src/assets/food-feedback.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 1;
