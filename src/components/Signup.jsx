@@ -10,7 +10,7 @@ const Signup = () => {
   }
   
 return (
-  <div>
+  <div className='signuop'>
     <br /><br /><br /><br /><br /><br /><br />
       <Typography variant='h4' style={{color: 'orange',fontFamily: 'serif',fontSize: '50px',fontWeight: 'bold',}} >Sign Up Here</Typography>
       <br /><br />
@@ -18,6 +18,7 @@ return (
       component="form"
       sx={{
         '& .MuiTextField-root': { m: 1, width: '25ch' },
+        
       }}
       noValidate
       autoComplete="off"
@@ -37,6 +38,7 @@ return (
       </Box>
       <br /><br />
       <Button variant='outlined' color='inherit' style={{color:'blue'}} >SignUp</Button>
+      <br /><br />
   </div>
 )
 }

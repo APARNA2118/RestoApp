@@ -18,6 +18,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems, secondaryListItems } from './ListItems';
+import '../components/style.css'
 //import './main.css';
 
 
@@ -29,8 +30,8 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
+      <Link color="inherit" href="http://localhost:3000/">
+        TeaTalks
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}

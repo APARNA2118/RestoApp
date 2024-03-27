@@ -5,7 +5,9 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import '../components/style.css'
 const Footer = () => {
   return (
+    
     <div className='footer'>
+      <br />
       <div className='socialmd'> 
       <InstagramIcon/>
       <FacebookIcon/>
