@@ -25,7 +25,7 @@ function App() {
        <Route path='/d' element={<Dashboard/>}/>
        <Route path='/f' element={<Feedback/>}/>
        {/* <Route path= '/c' element={<Checkout/>}/> */}
-       <Route path= '/cart' element={<AppCart/>}/>
+       <Route path= '/menu' element={<AppCart/>}/>
        <Route path="/o" element={<Order/>}/>
     </Routes>
     <Footer/>

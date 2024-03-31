@@ -38,7 +38,7 @@ const Nav = () => {
                      <Link to='/o' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>Order</Link>
                   </Button>
                   <Button style={{color:'white'}}>
-                     <Link to='/cart' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>Menu</Link>
+                     <Link to='/menu' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>Menu</Link>
                   </Button>
         </Toolbar>
      </AppBar>
