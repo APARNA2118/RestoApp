@@ -11,6 +11,7 @@ import Checkout from './components/Checkout';
 import AppCart from './AppCart';
 import Order from './components/Order';
 import Footer from './components/Footer';
+import Adminsign from './components/Adminsign';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
        {/* <Route path= '/c' element={<Checkout/>}/> */}
        <Route path= '/menu' element={<AppCart/>}/>
        <Route path="/o" element={<Order/>}/>
+       <Route path='/as' element={<Adminsign/>}/>
     </Routes>
     <Footer/>
     </div>

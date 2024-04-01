@@ -58,7 +58,7 @@ From a humble beginning to a full service restaurant, we have come a long way an
                <Typography gutterBottom variant="h5" style={{fontWeight:'bold', fontFamily:'sans-serif'}}>
                Bhatura
                </Typography>
-               <Typography variant="body2" style={{ justifyContent:'center' , color:'black'}}>
+               <Typography variant="body2" style={{ justifyContent:'center' , color:'black',fontFamily:'Montserrat',fontWeight:'400', fontSize:'16px'}}>
                Bhatoora is a fluffy deep-fried leavened sourdough bread originating from the Indian subcontinent. It is commonly served as a midday meal or a breakfast dish in northern and eastern India.
                </Typography>
              </CardContent>
@@ -68,15 +68,15 @@ From a humble beginning to a full service restaurant, we have come a long way an
             <CardMedia
              component='img'
              height='140'
-              image="https://media.istockphoto.com/id/1442492965/photo/chole-bhature-or-chana-masala-is-a-famous-indian-dish.jpg?s=1024x1024&w=is&k=20&c=XAU-xkcBQw9D60lTOji-_4ZA9dmFIUoVvY--LGC4SXE="
+              image="https://media.istockphoto.com/id/545997902/photo/paneer-butter-masala-with-chapati-roti-paratha.jpg?s=1024x1024&w=is&k=20&c=W4fbNSLjLQ8V5AZtADWmyh9FK2x1RrZHwcHxb7cHFQk="
             
             />
              <CardContent>
                <Typography gutterBottom variant="h5" style={{fontWeight:'bold', fontFamily:'sans-serif'}}>
-               Bhatura
+               Chapati
                </Typography>
-               <Typography variant="body2" style={{ justifyContent:'center' , color:'black'}}>
-               Bhatoora is a fluffy deep-fried leavened sourdough bread originating from the Indian subcontinent. It is commonly served as a midday meal or a breakfast dish in northern and eastern India.
+               <Typography variant="body2" style={{ justifyContent:'center' , color:'black',fontFamily:'Montserrat',fontWeight:'400', fontSize:'16px'}}>
+               Chapati, also known as roti, rooti, rotee rotli, rotta, safati, shabaati, phulka, chapo, sada roti, poli, and roshi, is an unleavened flatbread originating from the Indian subcontinent and is a staple in India.
                </Typography>
              </CardContent>    
            </Card>
@@ -86,15 +86,15 @@ From a humble beginning to a full service restaurant, we have come a long way an
             <CardMedia
              component='img'
              height='140'
-              image="https://media.istockphoto.com/id/1442492965/photo/chole-bhature-or-chana-masala-is-a-famous-indian-dish.jpg?s=1024x1024&w=is&k=20&c=XAU-xkcBQw9D60lTOji-_4ZA9dmFIUoVvY--LGC4SXE="
+              image="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             
             />
              <CardContent>
                <Typography gutterBottom variant="h5" style={{fontWeight:'bold', fontFamily:'sans-serif'}}>
-               Bhatura
+               Dosa
                </Typography>
-               <Typography variant="body2" style={{ justifyContent:'center' , color:'black'}}>
-               Bhatoora is a fluffy deep-fried leavened sourdough bread originating from the Indian subcontinent. It is commonly served as a midday meal or a breakfast dish in northern and eastern India.
+               <Typography variant="body2" style={{ justifyContent:'center' , color:'black',fontFamily:'Montserrat',fontWeight:'400', fontSize:'16px'}}>
+               A dosa is a thin, savoury crepe in South Indian cuisine made from a fermented batter of ground white gram and rice. Dosas are served hot, often with chutney and sambar. Dosas are popular in South Asia as well as around the world
                </Typography>
              </CardContent>
            </Card>
@@ -103,22 +103,24 @@ From a humble beginning to a full service restaurant, we have come a long way an
             <CardMedia
              component='img'
              height='140'
-              image="https://media.istockphoto.com/id/1442492965/photo/chole-bhature-or-chana-masala-is-a-famous-indian-dish.jpg?s=1024x1024&w=is&k=20&c=XAU-xkcBQw9D60lTOji-_4ZA9dmFIUoVvY--LGC4SXE="
+              image="https://media.istockphoto.com/id/180725952/photo/fried-chicken-legs.jpg?s=1024x1024&w=is&k=20&c=HAmeSlIJMz4rkCIkNpeoXTbEm7HYeSFHEAWRGDuXLdk="
             
             />
              <CardContent>
                <Typography gutterBottom variant="h5" style={{fontWeight:'bold', fontFamily:'sans-serif'}}>
-               Bhatura
+               Fried Chicken
                </Typography>
-               <Typography variant="body2" style={{ justifyContent:'center' , color:'black'}}>
-               Bhatoora is a fluffy deep-fried leavened sourdough bread originating from the Indian subcontinent. It is commonly served as a midday meal or a breakfast dish in northern and eastern India.
+               <Typography variant="body2" style={{ justifyContent:'center' , color:'black',fontFamily:'Montserrat',fontWeight:'400', fontSize:'16px'}}>
+               After some trial and error, they decided the chicken should be soaked in buttermilk and coated once in the breading mixture, then fried in oil at 350 °F (177 °C) in a pressure fryer until golden brown.
                </Typography>
              </CardContent>
            </Card>
          </Box>
         </Grid>
         <br /><br />
+        <div className="all">
         <Button variant="contained"  href="http://localhost:3000/menu" style={{alignContent:'center'}}>ORDER NOW</Button>
+        </div>
       </div>
 
     </Layout>
