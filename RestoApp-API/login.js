@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 let Ulogin = new Schema({
-    uname:{type: String},
-    pswd:{type: String},
+    uname:{type: String, required: true}, 
+    pswd:{type: String, required: true}
     
 
 });

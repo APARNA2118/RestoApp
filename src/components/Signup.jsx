@@ -29,10 +29,10 @@ return (
       </div>
       <div>
         <TextField required id="outlined-required"   label="PhoneNumber"   onChange={inputHandler}/>
-        <TextField required id="outlined-required"   label="Place"   onChange={inputHandler}/>
+        <TextField required id="outlined-required"   label="Password"   onChange={inputHandler}/>
       </div>
-      <TextField fullWidth label="Address" id="address" onChange={inputHandler}/>
-      <TextField required id="outlined-required"   label="Pincode"   onChange={inputHandler}/>
+      {/* <TextField fullWidth label="Address" id="address" onChange={inputHandler}/>
+      <TextField required id="outlined-required"   label="Pincode"   onChange={inputHandler}/> */}
 
      
       </Box>
