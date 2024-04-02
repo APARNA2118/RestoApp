@@ -156,7 +156,7 @@ function AppCart() {
 			</div>
 			<main>
 				<h2 className="title">
-					Products
+					MENU
 				</h2>
 				<div className="products">
 					{products.map((product) => (

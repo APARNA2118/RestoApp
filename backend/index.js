@@ -11,12 +11,16 @@ const cors= require('cors');
 app.use(express.json( )); 
 app.use(cors());
 
+// db connection with Mongoose
 mongoose.connect('mongodb+srv://tsaparna2020:aparnaMONGODB2111@cluster0.yl5hcmi.mongodb.net/restaurant');
 
-
+// API creation
 app.get("/",(req,res)=>{
     res.send("Express App is running")
 })
+
+
+// image storage engine
 
 const storage = multer.diskStorage({
     destination:'./upload/images',
@@ -29,6 +33,7 @@ const storage = multer.diskStorage({
 const upload = multer({storage:storage})
 
 // creating upload endpoint for images
+
 app.use('/images',express.static('upload/images'))
 app.post("/upload",upload.single('product'),(req,res)=>{
     res.json({
@@ -113,6 +118,14 @@ app.post('/removeproduct',async (req,res)=>{
         name:req.body.name
     })
 })
+
+// Creating API for getting all products
+
+app.get('/allproducts', async (req, res)=>{
+    let products = await Product.find({}); 
+    console.log("All Products Fetched"); 
+    res.send(products);
+    })
 
 
 app.listen(port,(error) =>{
