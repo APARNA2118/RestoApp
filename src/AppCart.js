@@ -11,7 +11,7 @@ const products = [
 		rating: 4.3,
 		description:
 			"Batura & curry",
-		price: 199,
+		price: 12,
 		image: require("./assets/images/product-1.jpg"),
 	},
 	{
@@ -20,25 +20,25 @@ const products = [
 		rating: 4.2,
 		description:
 			"Chapati & curry",
-		price: 229,
+		price: 10,
 		image: require("./assets/images/product-2.jpg"),
 	},
-	{
-		id: 3,
-		name: "Dosa",
-		rating: 3.2,
-		description:
-			"Dosa & curry",
-		price: 99,
-		image: require("./assets/images/product-3.jpg"),
-	},
+	// {
+	// 	id: 3,
+	// 	name: "Dosa",
+	// 	rating: 3.2,
+	// 	description:
+	// 		"Dosa & curry",
+	// 	price: 99,
+	// 	image: require("./assets/images/product-3.jpg"),
+	// },
 	{
 		id: 4,
 		name: "Croffle",
 		rating: 4.8,
 		description:
-			"Croffle is a Spanish dish",
-		price: 119,
+			"Buttery sweet crispy croissant waffles",
+		price: 100,
 		image: require("./assets/images/product-4.jpg"),
 	},
 	{
@@ -46,7 +46,7 @@ const products = [
 		name: "Tofu Balls",
 		rating: 4.5,
 		description:
-			"Tofu ball is a  vegan food.",
+			"Potato-filled balls",
 		price: 85,
 		image: require("./assets/images/product-5.jpg"),
 	},
@@ -55,9 +55,34 @@ const products = [
 		name: "Fried Chicken",
 		rating: 3.8,
 		description:"Fried chicken wings and legs",
-		price: 149,
+		price: 140,
 		image: require("./assets/images/product-6.jpg"),
 	},
+	{
+		id: 7,
+		name: "French Fries",
+		rating: 4.7,
+		description:"French fries with tomato sauce & mayonnaise ",
+		price: 90,
+		image: require("./assets/images/french-fries.jpg"),
+	},
+	{
+		id: 8,
+		name: "Sushi",
+		rating: 4.3,
+		description:"A Japanese dish with raw fish",
+		price: 140,
+		image: require("./assets/images/sushi.jpg"),
+	},
+	{
+		id: 8,
+		name: "Chicken Croquettes",
+		rating: 4.5,
+		description:"Chicken-filled balls",
+		price: 120,
+		image: require("./assets/images/chicken-croquettes.jpg"),
+	},
+	
 ];
 
 function AppCart() {
