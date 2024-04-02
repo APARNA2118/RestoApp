@@ -1,91 +1,84 @@
-import { Button, Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
+import { Button, Typography,Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import Home from './Home';
+import Home from './Signup';
 
 const Adminsign = () => {
-    var [students, setStudents] = useState([]);
-    var [selected, setSelected] = useState({});
     var [edit, setEdit] = useState(false);
+    var [selected, setSelected] = useState({});
+    var [user, setUsers] = useState([])
     useEffect(() => {
-        axios.get("http://localhost:4000/students")
-            .then((response) => {
-                console.log(response.data);
-                setStudents(response.data);
-            });
+        axios.get("http://localhost:3000/logins")
+            .then((respose) => {
+                //console.log(respose.data);
+                setUsers(respose.data);
+            })
     }, []);
 
-    const editPerson = (id) => {
-        axios
-            .get("http://localhost:4000/students/" + id)
-            .then((response) => {
-                setSelected(response.data);
-                setEdit(true);
-            }).catch(() => {
-                alert("Cannot edit");
-            });
-    }
-
-    const deleteHandler = (id) => {
-        axios
-            .delete("http://localhost:4000/students/" + id)
-            .then(() => {
-                alert("Deleted Row");
-                window.location.reload();
-
+    const deleteUser = (id) => {
+        axios.delete("http://localhost:3000/logins/" + id).then(() => {
+            alert("Delted Row");
+            window.location.reload();    //auto-reload of page
+        })
+            .catch(() => {
+                alert("Deleting Field")
             })
     }
 
+    const editUser = (id) => {
+        axios
+            .get("http://localhost:3000/logins/" + id)
+            .then((response) => {
+                setSelected(response.data);
+                setEdit(true);
+            })
+            .catch(() => {
+                alert("Cannot edit now");
+            });
+    };
 
     return (
-        <>
+        <div>
             {edit ? (
                 <Home method='put'
                     data={{
-                        id: selected._id, name: selected.name, age: selected.age, department: selected.department
-                    }}
-                />
-            ) : (
-                <div>
-                    &nbsp;&nbsp;
-                    <Grid container spacing={2}>
-                        {students.map((val, i) => {
-                            return (
-                                <Grid item xs={12} sm={6} md={4} sx={{ justifyContent: 'space-between' }}>
-                                    <br /><br />
-                                    <Card sx={{ padding: '2', borderColor: 'grey', borderStyle: 'solid', borderWidth: 2, maxWidth: 345 }}>
-                                        <CardMedia
-                                            sx={{ height: 140 }}
-                                            image="https://t4.ftcdn.net/jpg/05/91/40/47/360_F_591404733_XI6dw0OZMfxCsZLqzmY8BcWbzf2QwZdK.jpg"
-                                            title={val.title}
-                                        />
-                                        <hr style={{ borderTopStyle: 'solid', borderTopWidth: '2px', borderTopColor: 'black' }} />
-                                        <CardContent>
-                                            <Typography gutterBottom variant="h5" component="div">
-                                                {val.name}
-                                            </Typography>
-                                            <Typography variant="body2" color="text.secondary">
-                                                Age:{val.age} &nbsp;
-                                                Department : {val.department}
-                                            </Typography>
-                                        </CardContent>
-                                        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-                                            <Button variant="contained" color="primary" onClick={() => { editPerson(val._id) }} >
-                                                Edit
-                                            </Button>
-                                            <Button variant="contained" color="error" onClick={() => { deleteHandler(val._id) }} >
-                                                Delete
-                                            </Button>
-                                        </div>
-                                        <br />
-                                    </Card>
+                        id: selected._id, name: selected.name, email: selected.email, phone: selected.phone,  pswd: selected.pswd
+                    }}/>) 
+                    : (
+                    <TableContainer>
+                        <Table>
+                            <TableHead>
+                                <TableRow>
+                                    <TableCell>Name</TableCell>
+                                    <TableCell>Email</TableCell>
+                                    <TableCell>Phone</TableCell>
+                                    
 
-                                </Grid>
-                            )
-                        })}
-                    </Grid>
-                </div>)}
-        </>
+                                </TableRow>
+                            </TableHead>
+                            <TableBody>
+                                {user.map((val, ind) => {
+                                    return (
+                                        <TableRow>
+                                            <TableCell key={ind}>{val.user_name}</TableCell>
+                                            <TableCell key={ind}>{val.user_email}</TableCell>
+                                            <TableCell key={ind}>{val.user_phone}</TableCell>
+                                            <TableCell>
+                                                <Button onClick={() => { editUser(val._id); }}>EDIT</Button>
+                                            </TableCell>
+                                            <TableCell>
+                                                <Button onClick={() => { deleteUser(val._id); }} >DELETE</Button>
+                                            </TableCell>
+                                        </TableRow>
+
+                                    )
+                                })}
+                            </TableBody>
+                        </Table>
+                    </TableContainer>
+                )}
+        </div>
+
     )
 }
 

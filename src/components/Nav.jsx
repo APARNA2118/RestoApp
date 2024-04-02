@@ -25,6 +25,11 @@ const Nav = () => {
                   <Button style={{color:'white'}}>
                      <Link to='/s' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>Signup</Link>
                   </Button>
+
+                  <Button style={{color:'white'}}>
+                     <Link to='/as' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>ViewUser</Link>
+                  </Button>
+
                   <Button style={{color:'white'}}>
                      <Link to='/d' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>Dashboard</Link>
                   </Button>
