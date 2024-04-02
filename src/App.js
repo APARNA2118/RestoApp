@@ -25,7 +25,7 @@ function App() {
        <Route path='/s' element={<Signup/>}/>
        <Route path='/d' element={<Dashboard/>}/>
        <Route path='/f' element={<Feedback/>}/>
-       {/* <Route path= '/c' element={<Checkout/>}/> */}
+       <Route path= '/c' element={<Checkout/>}/>
        <Route path= '/menu' element={<AppCart/>}/>
        <Route path="/o" element={<Order/>}/>
        <Route path='/as' element={<Adminsign/>}/>

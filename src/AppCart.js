@@ -189,9 +189,9 @@ function AppCart() {
 								{product.price}$
 							</span>
 							<div className="buttons">
-								<button className="btn">
+								{/* <button className="btn">
 									Detail
-								</button>
+								</button> */}
 								<button
 									className="btn"
 									onClick={() =>

@@ -36,9 +36,9 @@ const Nav = () => {
                   <Button style={{color:'white'}}>
                      <Link to='/f' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>Feedback</Link>
                   </Button>
-                  {/* <Button style={{color:'white'}}>
+                  <Button style={{color:'white'}}>
                      <Link to='/c' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>Checkout</Link>
-                  </Button> */}
+                  </Button> 
                   <Button style={{color:'white'}}>
                      <Link to='/o' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>Order</Link>
                   </Button>
