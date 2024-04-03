@@ -3,6 +3,10 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
 import './dasbadmin.css';
+import { Link } from 'react-router-dom';
+// import Feedback from './components/Feedback';
+// import AppCart from './AppCart';
+// import Order from './components/Order';
 
 
 
@@ -12,6 +16,7 @@ const images = [
   { 
     url: 'assets/order.png',
     title: 'ORDER' ,
+    link: '/o',
     width: '40%',
 
     
@@ -20,15 +25,17 @@ const images = [
   {
     url: 'assets/menu.png',
     title: 'MENU',
+    link: 'http://localhost:3000/menu',
     width: '30%',
   },
   {
     url: '/assets/feedback.jpg',
     title: 'FEEDBACK',
+    link: '/f',
     width: '30%',
   },
 ];
-const order=require('../components/Feedback');
+//const order= require('../components/Feedback.js');
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
@@ -99,13 +106,16 @@ const Dashboard = () =>  {
       return (
         <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%' }}>
           {images.map((image) => (
+            // <Link to={images.link} keys={images}>
             <ImageButton
+            //Link to={images.link} keys={images.title}
               focusRipple
               key={image.title}
               style={{
                 width: image.width,
               }}
             >
+              
               <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
               <ImageBackdrop className="MuiImageBackdrop-root" />
               <Image>
@@ -126,6 +136,7 @@ const Dashboard = () =>  {
                 </Typography>
               </Image>
             </ImageButton>
+            // </Link>
           ))}
         </Box>
       
