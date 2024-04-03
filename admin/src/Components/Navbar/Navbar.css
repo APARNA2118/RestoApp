@@ -5,5 +5,13 @@
     padding: 15px 60px;
     box-shadow: 0 1px 3px -2px #000;
     margin-bottom: 1px;
-    background: black;
+    background: white;
+    height: 55px;
+}
+.nav-logo{
+    width: 100px;
+}
+
+.nav-profile{
+    width: 30px;
 }
