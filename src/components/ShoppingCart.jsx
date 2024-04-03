@@ -115,11 +115,20 @@ function ShoppingCart({
 						</div>
 					))}
 					{products.length > 0 && (
+						<Link to="/c">
 						<button className="btn checkout-btn">
 							Proceed to checkout
 						</button>
+						</Link>
 						
 					)}
+					
+					<button 
+						className="btn checkout-btn"
+						onClick={() => window.location.reload()}>
+							Return to Menu
+					</button>
+					
 					{/* <Link to="/menu">
           				  <button>Return to Menu</button>
         		  </Link>  */}

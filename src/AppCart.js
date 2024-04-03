@@ -48,7 +48,7 @@ const products = [
 		description:
 			"Potato-filled balls",
 		price: 85,
-		image: require("./assets/images/product-5.jpg"),
+		image: require("./assets/images/tufo-balls.jpg"),
 	},
 	{
 		id: 6,
