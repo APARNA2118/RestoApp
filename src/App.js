@@ -12,6 +12,7 @@ import AppCart from './AppCart';
 import Order from './components/Order';
 import Footer from './components/Footer';
 import Adminsign from './components/Adminsign';
+import Loginsign from './components/Loginsign';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
     
     <Routes>
        <Route path='/' element={<Home/>}/>
+       <Route path='/ls' element={<Loginsign/>}/>
        <Route path='/l' element={<Login/>}/>
        <Route path='/s' element={<Signup/>}/>
        <Route path='/d' element={<Dashboard/>}/>
