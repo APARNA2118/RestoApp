@@ -152,7 +152,7 @@ const Dashboard = () =>  {
         </Box>
         <ButtonGroup alignItems='center' aria-label="Basic example">
       <Button variant='secondary'>
-        <Link to='/menu'>ORDER</Link>
+        <Link to='/menu'>MENU</Link>
       </Button>
       &nbsp;&nbsp;&nbsp;
       <Button variant="secondary"><Link to='/menu'></Link></Button>

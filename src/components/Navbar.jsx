@@ -28,10 +28,12 @@ const Navbar =()=>{
                     Login
                     </a>
                     </button>
-                {/* <img src={cart_icon} alt=''/> */}
-                {/* <div className="nav-cart-count">
-                    0
-                </div> */}
+                    <button>
+                    <a href='/'>
+                    Logout
+                    </a>
+                    </button>
+
             </div>
         </div>
     )
