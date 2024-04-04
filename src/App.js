@@ -12,13 +12,13 @@ import AppCart from './AppCart';
 import Order from './components/Order';
 import Footer from './components/Footer';
 import Adminsign from './components/Adminsign';
-
+import Navbar from  './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-    <Nav/>
-    
+    {/* <Nav/> */}
+    <Navbar/>
     <Routes>
        <Route path='/' element={<Home/>}/>
        <Route path='/l' element={<Login/>}/>
@@ -29,6 +29,7 @@ function App() {
        <Route path= '/menu' element={<AppCart/>}/>
        <Route path="/o" element={<Order/>}/>
        <Route path='/as' element={<Adminsign/>}/>
+
     </Routes>
     <Footer/>
     </div>
