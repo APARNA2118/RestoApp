@@ -17,11 +17,16 @@ const Navbar =()=>{
             <ul className='nav-menu'>
                 <li onClick={()=>{setMenu('home')}}><a href="/">HOME</a>{menu==='home'?<h/>:<></>}</li>
                 <li onClick={()=>{setMenu('menu')}}><a href="/menu">MENU</a>{menu==='menu'?<h/>:<></>}</li>
+                <li onClick={()=>{setMenu('menu')}}><a href="/d">USER</a>{menu==='dashboard'?<h/>:<></>}</li>
                 <li onClick={()=>{setMenu('login')}}><a href="http://localhost:5173/">ADMIN</a>{menu==='login'?<h/>:<></>}</li>
                 
             </ul>
             <div className="nav-login-cart">
-                <button>Login</button>
+                <button>
+                    <a href='/ls'>
+                    Login
+                    </a>
+                    </button>
                 <img src={cart_icon} alt=''/>
                 <div className="nav-cart-count">
                     0
