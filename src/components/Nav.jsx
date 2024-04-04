@@ -20,6 +20,9 @@ const Nav = () => {
                      <Link to='/' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>Home</Link>
                   </Button>
                   <Button style={{color:'white'}}>
+                     <Link to='/ls' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>LoginSign</Link>
+                  </Button>
+                  <Button style={{color:'white'}}>
                      <Link to='/l' style={{fontSize:'18px', color: '#161010', fontFamily: '"Fira Sans sans-serif', fontWeight: 'bold'}}>Login</Link>
                   </Button>
                   <Button style={{color:'white'}}>

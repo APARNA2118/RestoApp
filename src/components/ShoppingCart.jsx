@@ -123,7 +123,7 @@ function ShoppingCart({
 						
 					)}
 					
-					<button 
+					<button
 						className="btn checkout-btn"
 						onClick={() => window.location.reload()}>
 							Return to Menu
