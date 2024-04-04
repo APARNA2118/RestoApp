@@ -31,7 +31,6 @@ const submit = () => {
         .post("http://localhost:3000/logins", {
             user_name: data.name,
             user_email: data.email,
-            user_phone: data.phone,
             user_pswd: data.pswd
         })
         .then(() => {
@@ -60,13 +59,12 @@ return (
       autoComplete="off"
     >
       <div>
-        <TextField required id="outlined-required" name='name' value={data.name}  label="Name"   onChange={inputHandler}/>
-        <TextField required id="outlined-required" name='email' value={data.email}  label="Email"   onChange={inputHandler}/>
-      </div>
-      <div>
-        <TextField required id="outlined-required" name='phone' value={data.phone}  label="PhoneNumber"   onChange={inputHandler}/>
+        <TextField required id="outlined-required" name='email' value={data.email}  label="Email or Username"   onChange={inputHandler}/>
         <TextField required id="outlined-required" name='pswd' value={data.pswd}  label="Password"   onChange={inputHandler}/>
       </div>
+      {/* <div>
+        <TextField required id="outlined-required" name='pswd' value={data.pswd}  label="Password"   onChange={inputHandler}/>
+      </div> */}
       {/* <TextField fullWidth label="Address" id="address" onChange={inputHandler}/>
       <TextField required id="outlined-required"   label="Pincode"   onChange={inputHandler}/> */}
 
