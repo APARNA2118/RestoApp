@@ -2,7 +2,7 @@
 import React from "react";
 import Layout from "./../components/Layout/Layout";
 import { Link } from "react-router-dom";
-import Banner from "../images/banner.jpg";
+import Banner from "../assets/header_img.png";
 import "../style/HomeStyles.css";
 import { Card, CardContent, Typography ,Box, CardMedia, Paper, Grid, Button } from "@mui/material";
 

@@ -15,9 +15,10 @@ const Navbar =()=>{
                 </p>
             </div>
             <ul className='nav-menu'>
-                <li onClick={()=>{setMenu('home')}}>HOME{menu==='home'?<h/>:<></>}</li>
-                <li onClick={()=>{setMenu('menu')}}>MENU{menu==='menu'?<h/>:<></>}</li>
-                <li onClick={()=>{setMenu('login')}}>LOGIN{menu==='login'?<h/>:<></>}</li>
+                <li onClick={()=>{setMenu('home')}}><a href="/">HOME</a>{menu==='home'?<h/>:<></>}</li>
+                <li onClick={()=>{setMenu('menu')}}><a href="/menu">MENU</a>{menu==='menu'?<h/>:<></>}</li>
+                <li onClick={()=>{setMenu('login')}}><a href="http://localhost:5173/">ADMIN</a>{menu==='login'?<h/>:<></>}</li>
+                
             </ul>
             <div className="nav-login-cart">
                 <button>Login</button>
