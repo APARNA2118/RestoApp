@@ -11,22 +11,25 @@ import Card from '@mui/material/Card';
 import Grid from '@mui/material/Grid';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
+//import Button from '@mui/material/Button';
+
+import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup'
 
 
 
 
 const images = [
   
-  { 
-    url: 'assets/order.png',
-    title: 'ORDER' ,
-    link: '/o',
-    width: '40%',
+  // { 
+  //   url: 'assets/order.png',
+  //   title: 'ORDER' ,
+  //   link: '/o',
+  //   width: '40%',
 
     
     
-  }, 
+  // }, 
   {
     url: 'assets/menu.png',
     title: 'MENU',
@@ -44,7 +47,7 @@ const images = [
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
-  height: 200,
+    height: 200,
   [theme.breakpoints.down('sm')]: {
     width: '100% !important', // Overrides inline-style
     height: 100,
@@ -147,6 +150,14 @@ const Dashboard = () =>  {
           ))}
           
         </Box>
+        <ButtonGroup alignItems='center' aria-label="Basic example">
+      <Button variant='secondary'>
+        <Link to='/menu'>ORDER</Link>
+      </Button>
+      &nbsp;&nbsp;&nbsp;
+      <Button variant="secondary"><Link to='/menu'></Link></Button>
+      <Button variant="secondary"><Link to='/f'>FEEDBACK</Link></Button>
+    </ButtonGroup>
         <br /><br />
 
         <div className="orderpg" >

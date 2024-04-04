@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Navbar.css'
 
 import logo from '../assets/logo.png'
-import cart_icon from '../assets/cart_icon.png'
+//import cart_icon from '../assets/cart_icon.png'
 
 const Navbar =()=>{
     const [menu,setMenu] = useState('home');
@@ -19,6 +19,7 @@ const Navbar =()=>{
                 <li onClick={()=>{setMenu('menu')}}><a href="/menu">MENU</a>{menu==='menu'?<h/>:<></>}</li>
                 <li onClick={()=>{setMenu('menu')}}><a href="/d">USER</a>{menu==='dashboard'?<h/>:<></>}</li>
                 <li onClick={()=>{setMenu('login')}}><a href="http://localhost:5173/">ADMIN</a>{menu==='login'?<h/>:<></>}</li>
+                <li onClick={()=>{setMenu('menu')}}><a href="/f">FEEDBACK</a>{menu==='feedback'?<h/>:<></>}</li>
                 
             </ul>
             <div className="nav-login-cart">
@@ -27,10 +28,10 @@ const Navbar =()=>{
                     Login
                     </a>
                     </button>
-                <img src={cart_icon} alt=''/>
-                <div className="nav-cart-count">
+                {/* <img src={cart_icon} alt=''/> */}
+                {/* <div className="nav-cart-count">
                     0
-                </div>
+                </div> */}
             </div>
         </div>
     )
